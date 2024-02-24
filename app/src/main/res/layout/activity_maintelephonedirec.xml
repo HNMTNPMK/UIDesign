@@ -1,25 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <TextView
-        android:id="@+id/textViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Name: John Doe" />
+        android:text="Danh Bạ"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
 
-    <TextView
-        android:id="@+id/textViewPhone"
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Phone: 123-456-7890" />
+        android:hint="Tìm kiếm người liên hệ..."
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="@drawable/baseline_broken_image_24"
+        android:drawableStart="@android:drawable/ic_search_category_default"
+        android:drawablePadding="8dp"
+        android:layout_marginBottom="16dp"/>
 
-    <TextView
-        android:id="@+id/textViewEmail"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Email: john@example.com" />
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_co_present_24"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Người dùng 1"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0123456789"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_co_present_24"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Người dùng 2"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0987654321"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Thêm thông tin liên hệ khác tại đây -->
 
 </LinearLayout>
